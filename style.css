@@ -1,0 +1,298 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #845130;
+    font-family: Montserrat, sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+    color: white;
+}
+header {
+    background-color: #845130;
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+header nav li img {
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+header nav li a {
+    padding: 5px 0; 
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+header nav li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #D4AF37;
+    transition: width 0.3s ease;
+}
+
+header nav li a:hover::after {
+    width: 100%;
+}
+
+header nav li a:hover {
+    color: #D4AF37;
+    background-color: transparent;
+}
+
+.secao-hero {
+    background-image: url('Imagens/Design\ sem\ nome\ \(1\).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+
+    padding: 5%;
+
+    font-family: Garamond, serif;
+    font-size: 30px;
+}
+
+@keyframes aparecerSuave {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+}
+}
+
+.hero-texto h2 {
+    animation: aparecerSuave 1.75s ease-out forwards;
+}
+
+.letra-cursiva {
+    font-family: 'Times New Roman', Times, serif, cursive;
+    font-size: 1.2em;
+    color: #D4AF37;
+    font-style: italic;
+}
+
+.faixa {
+    background-color: #c7a353;
+    padding: 30px 10%;
+    display: flex;
+
+    justify-content: center; 
+    align-items: center;
+    gap: 40px;
+
+}
+.faixa-imagem{
+    flex-shrink: 0;
+}
+.faixa-imagem img{
+    width: 80px; 
+    height: auto;
+}
+.faixa-texto {
+    max-width: 700px;
+    margin-top: 0;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.faixa-texto h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.secao-cta{
+    background-color: #845130;
+    padding: 5% 10%;
+    color: white;
+
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+}
+
+.secao-cta a{
+    display: inline-block;
+    background-color:#c7a353;
+    color: white;
+    padding: 18px 45px;
+    border-radius: 30px;
+    font-family: 'Questrial';
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 2px solid #c7a353;
+}
+
+.secao-cta a:hover {
+    background-color: #f4f4f4;
+    color: #c7a353;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.secao-cta img{
+    width: 200px;
+}
+
+.secao-sobre{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+    padding: 50px 10%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.secao-sobre img{
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                box-shadow 0.4s ease;
+    cursor: pointer;
+}
+.secao-sobre img:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.secao-sobre p{
+    width: 45%;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.linha-um, .linha-tres, .linha-dois{
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linha-dois{
+    flex-direction: row-reverse;
+}
+
+
+.secao-contato {
+    background-color: #d3ac69;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 60px 10% 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+.redes-sociais img {
+    width: 35px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    width: 200px; 
+    height: auto;}
+
+.img-nome-empresa {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.secao-contato p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    
+    .linha-um, .linha-dois, .linha-tres {
+        flex-direction: column !important; 
+        text-align: center;
+        gap: 20px;
+    }
+
+    .secao-sobre img, .secao-sobre p {
+        width: 100%;
+    }
+
+    .faixa {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        gap: 15px;
+        flex-wrap: wrap; 
+    }
+
+    header nav li img {
+        width: 120px;
+    }
+
+    .redes-sociais {
+        position: static; 
+        margin-top: 20px;
+    }
+}
