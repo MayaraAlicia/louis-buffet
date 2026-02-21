@@ -17,7 +17,7 @@ Esta é uma landing page desenvolvida para o **Louis Buffet**, uma empresa de ev
 ## 🛠️ Como visualizar o projeto
 
 O projeto está hospedado no GitHub Pages e pode ser acessado através do link abaixo:
-[👉 Clique aqui para acessar o site](https://SEU-USUARIO.github.io/louis-buffet/)
+[👉 Clique aqui para acessar o site](https://mayaraalicia.github.io/louis-buffet/)
 
 ---
 *Projeto desenvolvido por Mayara Lima como parte do portfólio de estudos em GTI - FATEC Assis.*
