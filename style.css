@@ -73,7 +73,7 @@ header nav li a:hover {
 }
 
 .secao-hero {
-    background-image: url('Imagens/Design\ sem\ nome\ \(1\).jpg');
+    background-image: url('Imagens/fundo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -295,4 +295,5 @@ header nav li a:hover {
         position: static; 
         margin-top: 20px;
     }
+
 }
